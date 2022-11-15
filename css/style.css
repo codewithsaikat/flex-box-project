@@ -105,5 +105,14 @@ nav .button a {
     width: 90%;
   }
 }
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-section .img-area img {
+  height: 1080.5px;
+  width: 1080.5px;
+}
 
 /*# sourceMappingURL=style.css.map */
