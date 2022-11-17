@@ -2,30 +2,79 @@
 body {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  font-size: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-nav {
+div {
+  font-size: 100%;
+}
+
+.container {
+  max-width: 1480px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+.container .row > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container .row > div > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container .row .col-3 {
+  width: 30.33%;
+}
+.container .row .col-4 {
+  width: 22%;
+}
+.container .row .col-5 {
+  width: 17%;
+}
+.container .row .col-2 {
+  width: 47%;
+}
+
+.header-body .row {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -38px;
+}
+
+.header-area {
   font-size: 24px;
   font-weight: 600;
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: #D82A47;
+  position: relative;
 }
-nav .options ul {
+.header-area .options ul {
   list-style: none;
   display: flex;
   margin-left: 0px;
 }
-nav .options ul li {
+.header-area .options ul li {
   margin: 0px 67px;
 }
-nav .options ul li:first-child {
+.header-area .options ul li:first-child {
   margin-left: 0px;
 }
-nav .button a {
+.header-area .button a {
   background-color: #D82A47;
   border-radius: 39px;
   color: #ffffff;
@@ -40,37 +89,32 @@ nav .button a {
   padding: 8px 35px;
 }
 
-.grid-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: -117px;
-  margin-top: -28px;
-}
 .grid-flex .col-image {
-  height: 800px;
+  height: 701px;
   flex: 50%;
   background-size: cover;
   align-items: center;
   justify-content: center;
+  margin-left: -118px;
 }
 .grid-flex .col-text {
-  flex: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 148px;
 }
 .grid-flex .col-text .Aligner-item h1 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   margin: 0px;
-  font-size: 152px;
+  font-size: 129px;
   color: #D82A47;
   white-space: nowrap;
+  font-size: 129px;
+  justify-content: center;
 }
 .grid-flex .col-text .Aligner-item p {
   margin: 0px;
+  font-size: 14px;
 }
 .grid-flex .col-text .Aligner-item .button {
   padding-top: 46px;
@@ -90,48 +134,46 @@ nav .button a {
   padding: 2px 35px;
 }
 
-.grid-flex-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 40px 354px;
-}
-.grid-flex-2 .col-image-2 {
-  height: 400px;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  flex: 50%;
-}
-.grid-flex-2 .col-text {
-  flex: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feature-pair:nth-child(odd) {
+  flex-direction: row-reverse;
 }
 
-@media (max-width: 640px) {
-  .grid-flex {
-    height: 40em;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-  .col {
-    order: vertical;
-  }
-  .col-left {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-  }
-  .col-text div p {
-    padding: 1em;
-  }
-  .Aligner-item {
-    width: 90%;
-  }
+.feature-pair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.feature {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.feature--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.features {
+  margin: 64px 0;
+}
+.features h4 {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  margin: 0;
+  line-height: 27px;
+}
+.features p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #4e4e4e;
+  line-height: 28.8px;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
